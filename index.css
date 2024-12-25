@@ -1,0 +1,157 @@
+*:not(title)
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+body
+{
+    background: linear-gradient(5deg, rgb(109, 0, 0), rgb(255, 0, 0), rgb(255, 0, 0));
+    width: 100vw;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+.p_corps
+{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 0, 0, 0);
+}
+/* .corps,*/ video
+{
+    /* background: ; */
+    position: absolute;
+    max-width: 500px;
+    max-height: 100vh;
+    min-width: 500px;
+    min-height: 600px;
+    background-color: rgba(0, 0, 0, 0.507);
+}
+.boiteNoel
+{
+    overflow: hidden;
+}
+.cover, .formulaire
+{
+    z-index: 110;
+    position: absolute;
+    margin: 100px;
+    padding: 25px;
+    justify-content:start;
+    max-width: 500px;
+    max-height: 100vh;
+    height: 100vh;
+    min-width: 500px;
+    min-height: 100vhu;
+    background-color: rgba(255, 0, 0, 0.116);
+}
+.defil1, .defil2
+{
+    position: absolute;
+    width: 33px;
+    flex-wrap: wrap;
+    max-height: 100vh;
+    min-height: 600px;
+}
+.defil1
+{
+    left: 0vh;
+    z-index: 10;
+}
+
+.defil2
+{
+    right: 0vh;
+    float: left;
+    z-index: 10;
+}
+.photo
+{
+    width: 290px;
+    height: 290px;
+    overflow: hidden;
+    border-radius: 1000px;
+	z-index: 100;
+    border: 8px solid white;
+    box-shadow: 0px 0px 50px white;
+}
+
+.photoM:before, .photoM:after {
+	content: '';
+	position: absolute;
+	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+		#0000ff, #00ff00,#ffff00, #ff0000);
+	background-size: 400%;
+    width: 290px;
+    height: 290px;
+    border-radius: 1000px;
+	z-index: -1;
+	animation: steam 20s linear infinite;
+}@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.photoM:after {
+	filter: blur(50px);
+}
+marquee>p
+{
+    font-size: 30px;
+}
+.infos
+{
+    background-color: rgba(172, 0, 0, 0.658);
+    padding: 10px;
+    padding-bottom: 20px;
+    max-width: 320px;
+    border-radius: 10px;
+    z-index: 100;
+
+}
+button
+{
+    padding: 20px;
+    background-color: white;
+    color: red;
+    border-radius: 10px;
+    border: 0;
+    font-size: 16px;
+    font-weight: bold;
+	animation: steam2 1.5s linear infinite;
+}@keyframes steam2 {
+	0% {
+		padding:16px;
+        border: 1px solid white;
+	}
+	25% {
+		padding:20px;
+        border: 4px solid rgb(255, 0, 0);
+	}
+	50% {
+		padding:16px;
+        border: 1px solid rgb(253, 228, 0);
+	}
+	75% {
+		padding:20px;
+        border: 4px solid rgb(255, 0, 0);
+	}
+	100% {
+		padding:16px;
+        border: 1px solid white;
+	}
+}
